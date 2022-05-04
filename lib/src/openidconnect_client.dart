@@ -202,7 +202,7 @@ class OpenIdConnectClient {
   }
 
   Future<OpenIdIdentity> loginInteractive({
-    required BuildContext context,
+    BuildContext? context,
     required String title,
     String? userNameHint,
     Map<String, String>? additionalParameters,

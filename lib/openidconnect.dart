@@ -71,7 +71,7 @@ class OpenIdConnect {
   }
 
   static Future<AuthorizationResponse?> authorizeInteractive({
-    required BuildContext context,
+    BuildContext? context,
     required String title,
     required InteractiveAuthorizationRequest request,
   }) async {
@@ -84,7 +84,7 @@ class OpenIdConnect {
     //These are special cases for the various different platforms because of limitations in pubspec.yaml
     if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) {
       responseUrl = await OpenIdConnectAndroidiOS.authorizeInteractive(
-        context: context,
+        context: context!,
         title: title,
         authorizationUrl: uri.toString(),
         redirectUrl: request.redirectUrl,
