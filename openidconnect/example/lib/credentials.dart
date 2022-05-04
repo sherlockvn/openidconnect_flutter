@@ -1,9 +1,9 @@
 final defaultDiscoveryUrl =
-    "https://yourdomain.com/.well-known/openid-configuration";
-final defaultClientId = "Admin";
-final String? defaultClientSecret = "setme";
+    "https://auth.qa.twake.app/.well-known/openid-configuration";
+final defaultClientId = "twake";
+final String? defaultClientSecret = "";
 final String? defaultAudience = "api";
-final defaultRedirectUrl = "http://localhost:50335/callback.html";
+final defaultRedirectUrl = "http://localhost:3000/callback.html";
 final defaultscopes = [
   "openid",
   "profile",
